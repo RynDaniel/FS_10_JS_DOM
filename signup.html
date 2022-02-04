@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Templates">
+  <meta name="author" content="Ryan Daniel">
+  <meta name="keywords" content="Templates">
+  <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+  <!-- Title Page-->
+  <title>ClarusBank</title>
+
+  <!-- Icons font CSS-->
+  <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+  <link href="assets/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" />
+  <link href="assets/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Font special for pages-->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+
+  <!-- assets CSS-->
+  <link href="assets/select2/select2.min.css" rel="stylesheet" />
+  <link href="assets/datepicker/daterangepicker.css" rel="stylesheet" />
+
+  <!-- Main CSS-->
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .redColorClass {
+            color: red;
+      }
+
+    .greenColorClass {
+            color: green;
+      }    
+    
+    .headerClass{
+      text-align: center;
+      font-size: 30px;
+    }
+    
+    .headerLogo{
+      width: 50px;
+      height: 50px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w680">
+      <div class="card card-4">
+        <div class="card-body">
+          <div id="headerId" class="headerClass" name="headerName">Clarusway
+            <h2 class="title">Registration Page</h2>
+            <!-- <img src="img/logo.png" alt="Bank logo" class="nav__logo" id="logo" /> -->
+          </div>
+          <form method="get" id="registration_form" action="signup.html?firstname=ryan">
+            <div class="row row-space">
+              <div class="col-2">
+                <div class="input-group">
+                  <label class="label">First Name</label>
+                  <input id="first_name" class="input--style-4" type="text" name="first_name" />
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="input-group">
+                  <label class="label">Last Name</label>
+                  <input id="last_name" class="input--style-4" type="text" name="last_name" maxlength="40" />
+                  <span id="charCount"></span>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="input-group">
+                  <label class="label">Full Name</label>
+                  <input id="full_name" class="input--style-4" type="text" name="full_name" maxlength="80" />
+                  <span id="charCount"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row row-space">
+              <div class="col-2">
+                <div class="input-group">
+                  <label class="label">Position</label>
+                  <div class="p-t-10">
+                    <label class="radio-container">Instructor
+                      <input id="instructor" type="radio" name="position" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">Student
+                      <input id="student" type="radio" name="position" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-space">
+              <div class="col-2">
+                <div class="input-group">
+                  <label class="label">Email</label>
+                  <input id="email" class="input--style-4" type="email" name="email" />
+                  <span id="errorSpan"></span>
+                </div>
+              </div>
+            </div>
+            <div class="input-group">
+              <label class="label">Paths</label>
+              <div class="rs-select2 js-select-simple select--no-search">
+                <select name="path" id="paths">
+                </select>
+                <div class="select-dropdown"></div>
+              </div>
+            </div>
+            <div class="p-t-15">
+              <button class="btn btn--radius-2 btn--blue" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jquery JS-->
+  <script src="assets/jquery/jquery.min.js"></script>
+  <!-- assets JS-->
+  <script src="assets/select2/select2.min.js"></script>
+  <script src="assets/datepicker/daterangepicker.js"></script>
+  <script src="js/global.js"></script>
+  <script src="signup.js"></script>
+</body>
+
+</html>
+<!-- end document-->

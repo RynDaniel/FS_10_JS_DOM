@@ -4,7 +4,7 @@
 
 The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web
 
-![JavaScript DOM Tree](./images/dom_tree.jpeg)
+![JavaScript DOM Tree](./img/dom_tree.png)
 
 The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
 
@@ -27,7 +27,7 @@ The document and window objects are the objects whose interfaces you generally u
 - document.querySelectorAll(selector)
 
 ## DOM Access Methods Performances
-![JavaScript DOM Access Methods](./images/dom_selectors.png)
+![JavaScript DOM Access Methods](./img/dom_selectors.png)
 
 
 ## DOM Methods
